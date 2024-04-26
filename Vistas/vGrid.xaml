@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jchusinExamen.Vistas.vGrid"
+             Title="vGrid">
+    <VerticalStackLayout>
+
+        <ContentView Padding="25">
+            <Label Text="Aplicación Móvil UISRAEL"
+           TextColor="Red"
+           FontSize="20"
+           HorizontalTextAlignment="Center"/>
+            <StackLayout HeightRequest="20"/>
+        </ContentView>
+
+
+        <Image x:Name="img" Source="logo.png"
+    HeightRequest="100"/>
+
+        <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Usuario" VerticalOptions="Center" TextColor="Blue" Grid.Row="0" Grid.Column="0" HorizontalOptions="StartAndExpand" VerticalTextAlignment="Center"/>
+            <Entry x:Name="UsernameEntry" Placeholder="Ingrese el Usuario" VerticalOptions="Center" Grid.Row="0" Grid.Column="1"/>
+
+            <Label Text="Contraseña" VerticalOptions="Center" TextColor="Blue" Grid.Row="1" Grid.Column="0" HorizontalOptions="StartAndExpand" VerticalTextAlignment="Center"/>
+            <Entry x:Name="PasswordEntry" Placeholder="Ingrese la Contraseña" IsPassword="True" VerticalOptions="Center" Grid.Row="1" Grid.Column="1"/>
+
+            <StackLayout Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="btnInicio" Text="Iniciar Sesión" 
+            HorizontalOptions="CenterAndExpand" FontSize="Micro"
+            Clicked="btnInicio_Clicked" 
+            />
+                <Button x:Name="btnAcerca" Text="Acerca" 
+            HorizontalOptions="CenterAndExpand" FontSize="Micro"
+            Clicked="btnAcerca_Clicked"
+            />
+            </StackLayout>
+
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

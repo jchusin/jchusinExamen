@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jchusinExamen.Vistas.vAcerca"
+             Title="vAcerca">
+    <VerticalStackLayout>
+        
+            <Label Text="ACERCA DEL SISTEMA" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" FontSize="20" FontAttributes="Bold"/>
+            <Label Text="Estudiante: Jose Chusin" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" FontSize="16"/>
+            <Label Text="Curso: Septimo A" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" FontSize="16"/>
+            <Label Text="Carrera: Ingeniería Informática" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" FontSize="16"/>
+            <Label Text="2024" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" FontSize="16"/>
+        <Button x:Name="cerrar" Text="Cerrar" Clicked="cerrar_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

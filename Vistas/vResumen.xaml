@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jchusinExamen.Vistas.vResumen"
+             Title="vResumen">
+    <ScrollView>
+        <StackLayout Spacing="25" Padding="20">
+            <Label x:Name="lblUsuario"
+                   HorizontalTextAlignment="End"
+                   FontSize="14"
+                    />
+
+            <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto"
+                  ColumnDefinitions="*, *">
+
+                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Nombre" VerticalOptions="Center" />
+                <Label x:Name="lblNombre" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" VerticalOptions="Center" />
+
+                <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Text="Apellido" VerticalOptions="Center" />
+                <Label x:Name="lblApellido" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" VerticalOptions="Center" />
+
+                <Label Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Text="Edad" VerticalOptions="Center" />
+                <Label x:Name="lblEdad" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" VerticalOptions="Center" />
+
+                <Label Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Text="Fecha" VerticalOptions="Center" />
+                <Label x:Name="lblFecha" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" VerticalOptions="Center" />
+
+                <Label Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" Text="Ciudad" VerticalOptions="Center" />
+                <Label x:Name="lblCiudad" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" VerticalOptions="Center" />
+
+                <Label Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="2" Text="País" VerticalOptions="Center" />
+                <Label x:Name="lblPais" Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="2" VerticalOptions="Center" />
+
+                <Label Grid.Row="12" Grid.Column="0" Text="Monto Inicial" VerticalOptions="Center" />
+                <Label x:Name="lblMontoInicial" Grid.Row="13" Grid.Column="0" VerticalOptions="Center" />
+
+                <Label Grid.Row="12" Grid.Column="1" Text="Pago mensual" VerticalOptions="Center" />
+                <Label x:Name="lblPagoMensual" Grid.Row="13" Grid.Column="1" VerticalOptions="Center" />
+
+            </Grid>
+
+            <Button Text="Cerrar sesión" Clicked="Button_Clicked_1" />
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
